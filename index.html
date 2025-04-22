@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosso Amor 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">Amor de Caue e Stephane(minha princesa) 💑</h1>
+    
+    <img src = "c:\Users\caueh\Downloads\firstPage-S0963180120000419a.jpg" alt="Foto do casal"  />
+
+    <p id="custom-message">Desde o dia mais incrível das nossas vidas 💕</p>
+
+    <div id="timer">Carregando...</div>
+
+    <script>
+      // Altere essa data para o início do namoro
+      const startDate = new Date("2025-01-23T00:00:00");
+  
+      function atualizarContador() {
+        const agora = new Date();
+        const diff = agora - startDate;
+  
+        const dias = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const horas = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const minutos = Math.floor((diff / (1000 * 60)) % 60);
+        const segundos = Math.floor((diff / 1000) % 60);
+  
+        const timerEl = document.getElementById("timer");
+        timerEl.innerHTML = `${dias} dias, ${horas} horas, ${minutos} minutos e ${segundos} segundos 💕`;
+      }
+  
+      setInterval(atualizarContador, 1000);
+      atualizarContador();
+    </script>
+
+
+</body>
+</html>
